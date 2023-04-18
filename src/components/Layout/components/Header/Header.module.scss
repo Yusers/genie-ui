@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/bootstrap';
+
+.header-text li > a {
+  color: black;
+}
+
+.header-text {
+  color: white;
+}
+
+.navbar-app {
+  width: 100vw;
+}
+
+.header-bg {
+  width: 100%;
+}
+
+.bg-brown {
+  background-color: #8b5050 !important;
+}
+
+.img-logo {
+  width: 150px;
+}
