@@ -1,51 +1,58 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Configuration, OpenAIApi } from 'openai';
+import React, { useState, useRef } from 'react';
 import './ChatBox.scss';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmarkCircle } from '@fortawesome/free-solid-svg-icons';
-const person = {
-  name: 'Guess',
-
-  get getName() {
-    return `${this.name}`;
-  },
-
-  set setName(name) {
-    this.name = name;
-  },
-};
 
 function ChatBox(props) {
   const [conversation, setConversation] = useState([]);
   const [message, setMessage] = useState('');
+  const [users, setUsers] = useState('Guess');
   const inputRef = useRef(null);
   const [isOpen, setIsOpen] = useState(true);
 
-  function handleClose(boolean) {
-    setIsOpen(boolean);
-    props.onClose();
-  }
+  const handleClose = () => {
+    props.onDataFromChild(isOpen);
+    setIsOpen(!isOpen);
+  };
+
+  const handleUsers = (user) => {
+    setUsers(user);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Add the user's message to the conversation state
+    setConversation((prevConversation) => [
+      ...prevConversation,
+      {
+        user: `${users}`,
+        text: message,
+      },
+    ]);
+
     axios
       .post('http://localhost:8080/chat', { prompt: message })
       .then((res) => {
+        let botMessage = res.data.trim();
         if (message.trim().toLowerCase() === 'hello') {
-          res.data = `Hello ${person.getName}, How can I help you?`;
-        } else if (message.toLowerCase().includes('tên:')) {
-          person.setName = message.split(':')[1];
+          botMessage = `Hello ${users}, How can I help you?`;
+        } else if (
+          message.toLowerCase().includes('tên') ||
+          message.toLowerCase().includes('tôi là')
+        ) {
+          handleUsers();
+        } else if (message.toLowerCase().includes('what your name')) {
+          botMessage = `I'm chatGPT`;
         }
-        setConversation((prevConversation) => [
-          ...prevConversation,
-          {
-            user: `${person.getName}`,
-            text: message,
-          },
-          { user: 'Bot', text: res.data.trim() },
-        ]);
+        // Update the last message in the conversation with the response from the server
+        setConversation((prevConversation) => {
+          const updatedConversation = [...prevConversation];
+          updatedConversation[updatedConversation.length - 1].text = message;
+          updatedConversation.push({ user: 'Bot', text: botMessage });
+          return updatedConversation;
+        });
       })
       .catch((err) => {
         console.error(err);
@@ -62,15 +69,15 @@ function ChatBox(props) {
           <div className="chatbox">
             <div className="chatbox__conversation">
               <div className="chatbox__header">
-                <p>
-                  <strong>Bot:</strong>I'm chatGPT, how can I help you?
-                </p>
                 <button onClick={handleClose}>
                   <FontAwesomeIcon
                     className="chatbox__ic"
                     icon={faXmarkCircle}
                   />
                 </button>
+                <p>
+                  <strong>Bot:</strong>I'm chatGPT, how can I help you?
+                </p>
               </div>
               <p>
                 <strong>Bot:</strong> Enter your name ex:"tên: Tân"

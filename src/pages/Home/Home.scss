@@ -34,6 +34,9 @@ $primary-color: #8b5050 !important;
   }
 }
 
+.home-page {
+  margin-bottom: 16px;
+}
 .card-carousel {
   height: 544px;
 }
@@ -44,31 +47,6 @@ $primary-color: #8b5050 !important;
   background-color: $primary-color;
 }
 
-.label-img {
-  background-image: url('../../../public/images/pages/label_page.png');
-  background-size: cover;
-  height: 800px;
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-  }
-
-  .label-input {
-    width: 80%;
-    height: 50%;
-    background-color: rgb(81, 81, 81);
-    opacity: 0.94;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .label-text {
-  }
+.landing-img {
+  height: 20vh;
 }

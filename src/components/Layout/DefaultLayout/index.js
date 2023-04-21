@@ -1,16 +1,16 @@
 import Header from '~/components/Layout/components/Header';
 import Footer from './Footer';
 import './DefaultLayout.scss';
+import ChatBoxBtn from '~/components/Layout/components/ChatBoxBtn';
 
 function DefaultLayout({ children }) {
   return (
-    <div className="containerApp">
+    <>
+      <ChatBoxBtn />
       <Header />
-      <div>
-        <div className="content">{children}</div>
-      </div>
+      <div className="content">{children}</div>
       <Footer />
-    </div>
+    </>
   );
 }
 
