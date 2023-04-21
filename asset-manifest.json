@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/genie-ui/static/css/main.fd14b1ff.css",
+    "main.js": "/genie-ui/static/js/main.67293a85.js",
+    "static/js/787.d238667e.chunk.js": "/genie-ui/static/js/787.d238667e.chunk.js",
+    "static/media/label_page.png": "/genie-ui/static/media/label_page.4b6ccbe9264caee4f0bb.png",
+    "static/media/weekly_pages_1.png": "/genie-ui/static/media/weekly_pages_1.9fd6d990b60ad9aa00ea.png",
+    "static/media/Genie.png": "/genie-ui/static/media/Genie.2d4057b3dbd2354a545f.png",
+    "index.html": "/genie-ui/index.html",
+    "main.fd14b1ff.css.map": "/genie-ui/static/css/main.fd14b1ff.css.map",
+    "main.67293a85.js.map": "/genie-ui/static/js/main.67293a85.js.map",
+    "787.d238667e.chunk.js.map": "/genie-ui/static/js/787.d238667e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd14b1ff.css",
+    "static/js/main.67293a85.js"
+  ]
+}
