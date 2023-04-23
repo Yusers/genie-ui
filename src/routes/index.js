@@ -4,10 +4,10 @@ import WeeklyOutfit from '~/pages/WeeklyOutfit';
 
 // Public routes
 const publicRoutes = [
-  { path: '/', component: Home },
-  { path: '/form-input', component: Form },
-  { path: '/weekly-outfit', component: WeeklyOutfit },
-  { path: '/form', component: Form, layout: null },
+  { path: '/genie-ui/', component: Home },
+  { path: '/genie-ui/form-input', component: Form },
+  { path: '/genie-ui/weekly-outfit', component: WeeklyOutfit },
+  { path: '/genie-ui/form', component: Form, layout: null },
 ];
 
 // Private routes
