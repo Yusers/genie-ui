@@ -24,7 +24,7 @@ function Header() {
               <Link
                 className={`nav-link active`}
                 aria-current="page"
-                to="/weekly-outfit"
+                to="genie-ui/weekly-outfit"
               >
                 Weekly-Outfit
               </Link>
@@ -35,17 +35,21 @@ function Header() {
           </ul>
           <ul className={`nav justify-content-center`}>
             <li className={`nav-item`}>
-              <Link className={`nav-link active`} aria-current="page" to="/">
+              <Link
+                className={`nav-link active`}
+                aria-current="page"
+                to="/genie-ui"
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/community">
+              <Link className="nav-link" to="genie-ui/community">
                 Community
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="genie-ui/about">
                 About
               </Link>
             </li>
