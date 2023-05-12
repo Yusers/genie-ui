@@ -1,13 +1,22 @@
 import Home from '~/pages/Home';
-import Form from '~/pages/Form';
+import Form from '~/pages/Register';
 import WeeklyOutfit from '~/pages/WeeklyOutfit';
+import Community from '~/pages/Community';
+import Register from '~/pages/Register';
+import Outfited from '~/pages/WeeklyOutfit/Outfited';
+import Login from '~/pages/Register/Login';
+import About from '~/pages/About';
 
 // Public routes
 const publicRoutes = [
-  { path: '/genie-ui/', component: Home },
-  { path: '/genie-ui/form-input', component: Form },
-  { path: '/genie-ui/weekly-outfit', component: WeeklyOutfit },
-  { path: '/genie-ui/form', component: Form, layout: null },
+  { path: '/', component: Home },
+  { path: '/community', component: Community },
+  { path: '/about', component: About },
+  { path: '/register', component: Register },
+  { path: '/login', component: Login },
+  { path: '/weekly-outfit', component: WeeklyOutfit },
+  { path: '/weekly-outfit/ur-outfit', component: Outfited },
+  { path: '/form', component: Form, layout: null },
 ];
 
 // Private routes

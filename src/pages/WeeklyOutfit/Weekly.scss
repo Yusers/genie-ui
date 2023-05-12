@@ -1,4 +1,4 @@
-$primary-color: #8b5050 !important;
+$primary-color: #bc9393 !important;
 $second-color: #473a3a !important;
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,400;1,500&family=Kanit:wght@100;200;400;500&family=Oswald:wght@300;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yanone+Kaffeesatz&display=swap');
 
@@ -9,6 +9,7 @@ $second-color: #473a3a !important;
   justify-content: center;
   flex-direction: column;
   text-shadow: 2px 2px 4px #1a1717;
+  margin-bottom: -11vh;
 
   .weekly-input {
     width: 100%;
@@ -50,4 +51,22 @@ $second-color: #473a3a !important;
   .card-carousel {
     height: 544px;
   }
+}
+
+.nav-tabs .nav-link {
+  color: white;
+}
+
+.nav-tabs .nav-link:hover {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px #232121;
+  background-color: white;
+}
+
+.weekly-wrapper .form-control,
+.weekly-wrapper .form-select option,
+.weekly-wrapper .form-select,
+.weekly-wrapper .form-control::placeholder {
+  color: rgb(40, 39, 39);
+  text-shadow: 2px 2px 4px #fff8f8;
 }

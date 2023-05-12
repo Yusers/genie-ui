@@ -3,6 +3,8 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import HeaderText from './HeaderText';
 import { Link } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const cx = classNames.bind(styles);
 
@@ -24,33 +26,33 @@ function Header() {
               <Link
                 className={`nav-link active`}
                 aria-current="page"
-                to="genie-ui/weekly-outfit"
+                to="/weekly-outfit"
               >
                 Weekly-Outfit
               </Link>
             </li>
-            <li className={`nav-item`}>
-              <Link className="nav-link">ChatBox</Link>
-            </li>
           </ul>
           <ul className={`nav justify-content-center`}>
             <li className={`nav-item`}>
-              <Link
-                className={`nav-link active`}
-                aria-current="page"
-                to="/genie-ui"
-              >
+              <Link className={`nav-link active`} aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="genie-ui/community">
+              <Link className="nav-link" to="/community">
                 Community
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="genie-ui/about">
+              <Link className="nav-link" to="/about">
                 About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className={`nav-link`} to="/login">
+                <div className={`${cx('register')}`}>
+                  <a style={{ margin: 0 }}>Log in</a>
+                </div>
               </Link>
             </li>
           </ul>

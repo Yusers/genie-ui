@@ -15,13 +15,18 @@ $primary-color: #bc9393;
   background-color: $primary-color !important;
 }
 
+.register {
+  color: rgb(255 157 157);
+  border-radius: 4px;
+}
+
 .header-text li > a:focus,
 .header-text li:hover a {
   color: #000000 !important;
 }
 
 .features {
-  margin-left: 111px;
+  margin-left: 208px;
 }
 
 .header-bg {

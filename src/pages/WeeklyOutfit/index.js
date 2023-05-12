@@ -5,70 +5,10 @@ import FormInput from '~/components/Layout/components/FormInput';
 import './Weekly.scss';
 import React, { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
-import Card from '~/components/Layout/components/Card';
 import Tabs from 'react-bootstrap/Tabs';
-import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
-
-const DataCard = [
-  {
-    id: 1,
-    imgSrc: './images/outfit/home_outfit.jfif',
-    title: 'Monday',
-    description:
-      "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
-    link: '/',
-  },
-  {
-    id: 2,
-    imgSrc: './images/outfit/home_outfit2.jfif',
-    title: 'Tuesday',
-    description:
-      "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
-    link: '/',
-  },
-  {
-    id: 3,
-    imgSrc: './images/outfit/home_outfit3.jfif',
-    title: 'Wednesday',
-    description:
-      "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
-    link: '/',
-  },
-  {
-    id: 4,
-    imgSrc: './images/outfit/home_outfit4.jfif',
-    title: 'Thursday',
-    description:
-      "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
-    link: '/',
-  },
-  {
-    id: 5,
-    imgSrc: './images/outfit/home_outfit5.jfif',
-    title: 'Friday',
-    description:
-      "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
-    link: '/',
-  },
-  {
-    id: 6,
-    imgSrc: './images/outfit/home_outfit6.jfif',
-    title: 'Saturday',
-    description:
-      "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
-    link: '/',
-  },
-  {
-    id: 7,
-    imgSrc: './images/outfit/home_outfit7.jfif',
-    title: 'Sunday',
-    description:
-      "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
-    link: '/',
-  },
-];
+import Modal from '~/components/Layout/components/ModalB';
 
 const imgs = [
   { srcImg: './images/pages/weekly_pages_1.png', title: '', descr: '' },

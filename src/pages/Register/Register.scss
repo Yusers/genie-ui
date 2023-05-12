@@ -1,0 +1,117 @@
+$primary-color: #bc9393 !important;
+
+* {
+  color: white;
+}
+
+.Register {
+  text-shadow: 2px 2px 4px #232121;
+  display: flex;
+  margin-bottom: -11vh;
+  height: 79vh;
+  justify-content: center;
+  align-items: center;
+  background: url('../../../public/images/pages/landing_pages_4.png');
+  object-fit: cover;
+}
+
+.form {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  height: 434px;
+  width: 800px;
+  border: none;
+  border-radius: 4px;
+}
+
+.form-header {
+}
+
+.form-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 0 14px;
+  background-color: rgba(20, 19, 19, 0.5);
+}
+
+.form-img h1,
+.form-img h5,
+.form-img p {
+  text-shadow: 2px 2px 4px #232121;
+  margin-bottom: 18px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background-color: $primary-color;
+}
+
+.form-body {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-body input {
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0;
+  height: 36px;
+}
+
+.form-body input::placeholder {
+  color: black;
+  text-align: center;
+}
+
+.form-footer {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-footer button {
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 14px;
+}
+
+.form-footer button:hover {
+  opacity: 0.8;
+}
+
+.form-loginApi {
+  margin-top: 4px;
+}
+
+.text {
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.text:hover {
+  color: white;
+  opacity: 0.5;
+}
+
+.form-loginApi a {
+  color: white;
+  margin: 0 14px;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.form-loginApi a:hover {
+  color: #030303;
+}

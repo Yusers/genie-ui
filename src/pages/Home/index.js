@@ -35,14 +35,6 @@ function Home() {
           <Carousel data={dataFunction} />
         </div>
       </div>
-      <div className={`${cx('label-img')}`}>
-        <div className={`overlay`}>
-          <div className={`label-input`}>
-            <h1 className={`label-text`}>Hello</h1>
-            <div className={`label-form`}></div>
-          </div>
-        </div>
-      </div>
       <div className="form-input"></div>
     </div>
   );

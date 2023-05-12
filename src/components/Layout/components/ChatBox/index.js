@@ -45,6 +45,8 @@ function ChatBox(props) {
           handleUsers();
         } else if (message.toLowerCase().includes('what your name')) {
           botMessage = `I'm chatGPT`;
+        } else if (message.toLowerCase().includes('website')) {
+          botMessage = `Website Genie giúp các bạn mở rộng gu ăn mặc, thời trang nói chung.`;
         }
         // Update the last message in the conversation with the response from the server
         setConversation((prevConversation) => {
@@ -75,13 +77,11 @@ function ChatBox(props) {
                     icon={faXmarkCircle}
                   />
                 </button>
-                <p>
-                  <strong>Bot:</strong>I'm chatGPT, how can I help you?
+                <p style={{ fontSize: '14px' }}>
+                  <strong>Bot:</strong> Hello, tôi là thần đèn, hãy nói cho tôi
+                  về <br></br> điều ước của bạn nhé^^
                 </p>
               </div>
-              <p>
-                <strong>Bot:</strong> Enter your name ex:"tên: Tân"
-              </p>
               {conversation.map((msg, index) => (
                 <p
                   key={index}

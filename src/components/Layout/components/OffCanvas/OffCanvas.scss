@@ -1,0 +1,38 @@
+.me-2 {
+  background-color: inherit;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.offcanvas-descr {
+  display: flex;
+  flex-direction: column;
+}
+
+.title,
+.offcanvas-descr {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.offcanvas-descr p {
+  margin: 8px 0px;
+  color: black;
+}
+
+.offcanvas-img {
+  width: 330px;
+  height: 430px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.offcanvas-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

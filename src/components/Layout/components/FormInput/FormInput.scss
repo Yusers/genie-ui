@@ -4,3 +4,10 @@
   font-size: 22px;
   font-family: 'Oswald', sans-serif;
 }
+
+.form-body input[type='text'],
+.form-body input[type='password'],
+select {
+  color: black;
+  text-align: center;
+}

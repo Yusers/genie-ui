@@ -1,0 +1,33 @@
+.About {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.About-intro {
+  width: 100vw;
+}
+
+.About-header {
+  color: black;
+  display: inline-block;
+}
+
+.About-header h1 {
+}
+
+.About-header-container {
+  display: flex;
+}
+
+.About-intro img {
+  width: 800px;
+}
+
+.w-80 {
+  width: 80%;
+}

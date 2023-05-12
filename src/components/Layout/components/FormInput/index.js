@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import SearchBar from '../SearchBar';
 import './FormInput.scss';
+import { Link } from 'react-router-dom';
 
 function FormInput({ boolean }) {
   return (
@@ -69,9 +70,11 @@ function FormInput({ boolean }) {
         </Form.Group>
       )}
 
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
+      <Link to="/weekly-outfit/ur-outfit">
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Link>
     </Form>
   );
 }

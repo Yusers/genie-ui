@@ -5,7 +5,7 @@ $chatbox-bg-color: #e0cdcd;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 350px;
+  width: 400px;
   background-color: $chatbox-bg-color;
   border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -38,22 +38,19 @@ $chatbox-bg-color: #e0cdcd;
   display: inline-flex;
   justify-content: flex-end;
   button {
+    padding: 0;
+    margin-right: 3px;
     background-color: $chatbox-bg-color;
     border: none;
-    font-size: 22px;
-    margin-left: 50px;
-    right: 28px;
-    top: 639px;
-    margin-bottom: 31px;
+    font-size: 18px;
+    right: 30px;
     position: fixed;
   }
 
   button:hover {
     opacity: 0.5;
     border: none;
-    font-size: 22px;
-    margin-left: 10px;
-    margin-bottom: 31px;
+    font-size: 18px;
   }
 }
 
@@ -79,7 +76,7 @@ $chatbox-bg-color: #e0cdcd;
 }
 
 .chatbox__conversation {
-  padding: 15px;
+  padding: 4px 14px;
   overflow-y: scroll;
   height: 250px;
 }
@@ -104,7 +101,7 @@ $chatbox-bg-color: #e0cdcd;
 }
 
 .chatbox__input-container {
-  width: 350px;
+  width: 100%;
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -119,7 +116,7 @@ $chatbox-bg-color: #e0cdcd;
 .chatbox__input {
   border: none;
   outline: none;
-  width: 280px;
+  width: 82%;
   padding-left: 10px;
   height: 100%;
   border-radius: inherit;
@@ -131,8 +128,8 @@ $chatbox-bg-color: #e0cdcd;
   background-color: #121712;
   color: #fff;
   height: 100%;
-  padding: 0 20px;
   border: none;
+  width: 18%;
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
