@@ -13,43 +13,47 @@ function Header() {
     <header className={`blog-header ${cx('header-text')} ${cx('header-bg')}`}>
       <div className={`nav`}>
         <div className={`${cx('navbar-body')}`}>
-          <div className={`navbar-brand-img`}>
-            <a
-              className={`text-color-peachPuff4 blog-header-logo text-dark`}
-              href="/"
-            >
-              <img className={cx('img-logo')} src={images.logo} />
-            </a>
-          </div>
           <ul className={`${cx('features')} nav justify-content-center`}>
             <li className={`nav-item`}>
               <Link
                 className={`nav-link active`}
                 aria-current="page"
-                to="/weekly-outfit"
+                to="/genie-ui/weekly-outfit"
               >
                 Weekly-Outfit
               </Link>
             </li>
           </ul>
+          <div className={`${cx('navbar-brand-img')}`}>
+            <a
+              className={`text-color-peachPuff4 blog-header-logo text-dark`}
+              href="/genie-ui"
+            >
+              <img className={cx('img-logo')} src={images.logo} />
+            </a>
+          </div>
           <ul className={`nav justify-content-center`}>
             <li className={`nav-item`}>
-              <Link className={`nav-link active`} aria-current="page" to="/">
+              <Link
+                className={`nav-link active`}
+                aria-current="page"
+                to="/genie-ui"
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/community">
+              <Link className="nav-link" to="/genie-ui/community">
                 Community
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/genie-ui/about">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link`} to="/login">
+              <Link className={`nav-link`} to="/genie-ui/login">
                 <div className={`${cx('register')}`}>
                   <a style={{ margin: 0 }}>Log in</a>
                 </div>

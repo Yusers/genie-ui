@@ -26,7 +26,7 @@ function Login() {
           <div className="form-body">
             <input type="text" placeholder="User Name" />
             <input type="password" placeholder="Password" />
-            <Link className="text" to="/register">
+            <Link className="text" to="/genie-ui/register">
               or register here?
             </Link>
           </div>

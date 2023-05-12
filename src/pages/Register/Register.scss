@@ -1,10 +1,7 @@
 $primary-color: #bc9393 !important;
 
-* {
-  color: white;
-}
-
 .Register {
+  color: white;
   text-shadow: 2px 2px 4px #232121;
   display: flex;
   margin-bottom: -11vh;
@@ -81,6 +78,7 @@ $primary-color: #bc9393 !important;
 }
 
 .form-footer button {
+  color: white;
   border-radius: 10px;
   background-color: rgb(0, 0, 0);
   margin-bottom: 14px;

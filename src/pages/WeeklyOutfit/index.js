@@ -52,7 +52,7 @@ function WeeklyOutfit() {
               <Tab eventKey="home" title="Có rồi">
                 <div className="weekly-wrapper">
                   <div className="weekly-header">
-                    <h1 className="title">Weekly Outfit</h1>
+                    <h1 className="weekly-title">Weekly Outfit</h1>
                     <h2>
                       "Get creative with your clothes using our Weekly Outfit
                       feature."

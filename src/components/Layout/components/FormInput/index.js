@@ -11,13 +11,8 @@ function FormInput({ boolean }) {
     <Form className="form-container">
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridName">
-          <Form.Label>Tên</Form.Label>
-          <Form.Control type="name" placeholder="Tên của bạn" />
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="ex: email@email.com" />
+          <Form.Label>Tên Biệt Danh</Form.Label>
+          <Form.Control type="name" placeholder="Tên biệt danh của bạn" />
         </Form.Group>
       </Row>
 
@@ -70,7 +65,7 @@ function FormInput({ boolean }) {
         </Form.Group>
       )}
 
-      <Link to="/weekly-outfit/ur-outfit">
+      <Link to="/genie-ui/weekly-outfit/ur-outfit">
         <Button variant="primary" type="submit">
           Submit
         </Button>

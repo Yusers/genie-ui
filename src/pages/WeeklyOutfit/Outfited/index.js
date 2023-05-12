@@ -5,7 +5,7 @@ import './Outfited.scss';
 const DataCard = [
   {
     id: 1,
-    imgSrc: '../images/outfit/home_outfit.jfif',
+    imgSrc: '/images/outfit/home_outfit.jfif',
     title: 'Monday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -17,7 +17,7 @@ const DataCard = [
   },
   {
     id: 2,
-    imgSrc: '../images/outfit/home_outfit2.jfif',
+    imgSrc: '/images/outfit/home_outfit2.jfif',
     title: 'Tuesday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -29,7 +29,7 @@ const DataCard = [
   },
   {
     id: 3,
-    imgSrc: '../images/outfit/home_outfit3.jfif',
+    imgSrc: '/images/outfit/home_outfit3.jfif',
     title: 'Wednesday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -41,7 +41,7 @@ const DataCard = [
   },
   {
     id: 4,
-    imgSrc: '../images/outfit/home_outfit4.jfif',
+    imgSrc: '/images/outfit/home_outfit4.jfif',
     title: 'Thursday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -53,7 +53,7 @@ const DataCard = [
   },
   {
     id: 5,
-    imgSrc: '../images/outfit/home_outfit5.jfif',
+    imgSrc: '/images/outfit/home_outfit5.jfif',
     title: 'Friday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -65,7 +65,7 @@ const DataCard = [
   },
   {
     id: 6,
-    imgSrc: '../images/outfit/home_outfit6.jfif',
+    imgSrc: '/images/outfit/home_outfit6.jfif',
     title: 'Saturday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -77,7 +77,7 @@ const DataCard = [
   },
   {
     id: 7,
-    imgSrc: '../images/outfit/home_outfit7.jfif',
+    imgSrc: '/images/outfit/home_outfit7.jfif',
     title: 'Sunday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",

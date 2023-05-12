@@ -37,6 +37,8 @@ $chatbox-bg-color: #e0cdcd;
 .chatbox__header {
   display: inline-flex;
   justify-content: flex-end;
+  color: black;
+
   button {
     padding: 0;
     margin-right: 3px;
@@ -51,6 +53,10 @@ $chatbox-bg-color: #e0cdcd;
     opacity: 0.5;
     border: none;
     font-size: 18px;
+  }
+
+  .chatbox__ic {
+    color: black;
   }
 }
 
@@ -76,12 +82,18 @@ $chatbox-bg-color: #e0cdcd;
 }
 
 .chatbox__conversation {
+  color: black;
   padding: 4px 14px;
   overflow-y: scroll;
   height: 250px;
 }
 
-.chatbox__message {
+.chatbox__header p,
+.chatbox__header p strong {
+  color: black;
+}
+
+.chatbox__conversation .chatbox__message {
   margin: 10px 0;
   font-size: 14px;
   line-height: 20px;
@@ -114,6 +126,7 @@ $chatbox-bg-color: #e0cdcd;
 }
 
 .chatbox__input {
+  color: black;
   border: none;
   outline: none;
   width: 82%;

@@ -27,7 +27,7 @@ function Register() {
             <input type="text" placeholder="User Name" />
             <input type="password" placeholder="Password" />
             <input type="email" placeholder="email@email.com" />
-            <Link className="text" to="/login">
+            <Link className="text" to="/genie-ui/login">
               or login here?
             </Link>
           </div>
