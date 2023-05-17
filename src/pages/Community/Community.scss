@@ -1,0 +1,28 @@
+.Community {
+  height: 515px;
+  display: flex;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  width: 600px;
+  height: 400px;
+}
+
+.post-img {
+}
+
+.post-img img {
+  object-fit: cover;
+  height: 38vw;
+  width: 100%;
+}
+
+.post-info {
+  height: 100%;
+}
+
+.post-img {
+  width: 400px;
+}

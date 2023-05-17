@@ -6,8 +6,12 @@ $primary-color: #bc9393;
 
 .header-text li > a {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Oswald', sans-serif;
+}
+
+.bars {
+  color: white;
 }
 
 .header-text {
@@ -33,16 +37,17 @@ $primary-color: #bc9393;
   width: 100%;
 }
 
-.navbar-brand-img {
-  margin-left: 204px;
-}
-
 .bg-brown {
   background-color: $primary-color;
 }
 
 .img-logo {
   width: 100px;
+}
+
+.navlink-logo {
+  color: white;
+  text-decoration: none;
 }
 
 .navbar-body {

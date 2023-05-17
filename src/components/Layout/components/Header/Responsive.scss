@@ -1,0 +1,48 @@
+// Mobile responsive
+@media (max-width: 740px) {
+  .pc-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    left: 0;
+    top: 42.5px;
+    z-index: 999;
+  }
+
+  .weekly {
+    display: none !important;
+  }
+
+  .dropdowMenu {
+    padding-left: 6px;
+    display: block;
+    position: relative;
+    font-size: 26px;
+  }
+
+  .navbar-brand-img {
+    margin-left: 0 !important;
+  }
+
+  .dropdownItems {
+    margin-top: 10px;
+  }
+
+  .login {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+// PC responsive and tablet
+@media (min-width: 740px) {
+  .dropdowMenu {
+    display: none !important;
+  }
+
+  .navbar-brand-img {
+    margin-left: 176px;
+  }
+}

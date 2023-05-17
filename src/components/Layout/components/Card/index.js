@@ -12,7 +12,7 @@ function Card({ card }) {
         <h5 className={`${cx('card-title')}`}>{card.title}</h5>
         <p className={`${cx('card-descr')}`}>{card.description}</p>
         <div className={`${cx('btn')}`}>
-          <OffCanvas card={card} />
+          <OffCanvas card={card} isCardChildren={true} btn={'More...'} />
         </div>
       </div>
     </div>

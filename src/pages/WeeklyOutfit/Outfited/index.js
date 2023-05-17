@@ -102,7 +102,7 @@ function Outfited() {
       >
         {DataCard.map((card, idx) => (
           <div className="item" key={idx}>
-            <Card card={card} />
+            <Card card={card} isCardChildren={true} />
           </div>
         ))}
       </OwlCarousel>
