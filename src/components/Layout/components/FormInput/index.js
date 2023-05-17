@@ -65,11 +65,9 @@ function FormInput({ boolean }) {
         </Form.Group>
       )}
 
-      <Link to="/genie-ui/weekly-outfit/ur-outfit">
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Link>
+      <a href="/genie-ui/weekly-outfit/ur-outfit">
+        <Button variant="primary">Submit</Button>
+      </a>
     </Form>
   );
 }
