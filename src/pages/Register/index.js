@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Register.scss';
 import { faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import { BrowserView, MobileOnlyView } from 'react-device-detect';
 
 function Register() {
   return (
@@ -12,12 +13,14 @@ function Register() {
           <h5>
             "Tạo tài khoản ngay và phát huy phong cách của bạn với Genie!"
           </h5>
-          <p>
-            "Khám phá thế giới phối đồ tuyệt vời với Genie - nơi mà phong cách
-            của bạn trở nên sống động và đầy sáng tạo. Hãy tạo tài khoản ngay
-            hôm nay và khám phá biết bao nhiêu cách để tỏa sáng với phong cách
-            riêng của bạn!"
-          </p>
+          <BrowserView>
+            <p>
+              "Khám phá thế giới phối đồ tuyệt vời với Genie - nơi mà phong cách
+              của bạn trở nên sống động và đầy sáng tạo. Hãy tạo tài khoản ngay
+              hôm nay và khám phá biết bao nhiêu cách để tỏa sáng với phong cách
+              riêng của bạn!"
+            </p>
+          </BrowserView>
         </div>
         <div className="form-login">
           <div className="form-header">

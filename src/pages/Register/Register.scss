@@ -1,11 +1,11 @@
 $primary-color: #bc9393 !important;
 
 .Register {
+  display: flex;
   color: white;
   text-shadow: 2px 2px 4px #232121;
-  display: flex;
-  margin-bottom: -11vh;
-  height: 80vh;
+  height: 90vh;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   background: url('../../../public/images/pages/landing_pages_4.png');
@@ -53,7 +53,7 @@ $primary-color: #bc9393 !important;
 }
 
 .form-body {
-  padding: 0 100px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -72,7 +72,7 @@ $primary-color: #bc9393 !important;
 }
 
 .form-footer {
-  padding: 0 100px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
 }
@@ -82,6 +82,7 @@ $primary-color: #bc9393 !important;
   border-radius: 10px;
   background-color: rgb(0, 0, 0);
   margin-bottom: 14px;
+  height: 35px;
 }
 
 .form-footer button:hover {

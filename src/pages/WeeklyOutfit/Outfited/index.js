@@ -1,6 +1,7 @@
 import Card from '~/components/Layout/components/Card';
 import OwlCarousel from 'react-owl-carousel';
 import './Outfited.scss';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 const DataCard = [
   {
@@ -89,24 +90,27 @@ const DataCard = [
   },
 ];
 
-function Outfited() {
+function Outfited({ numberItems = 4 }) {
   return (
     <div className="Outfited">
-      <OwlCarousel
-        className="owl-theme"
-        autoplay={true}
-        autoplayTimeout={2000}
-        loop={true}
-        margin={10}
-        items={4}
-      >
-        {DataCard.map((card, idx) => (
-          <div className="item" key={idx}>
-            <Card card={card} isCardChildren={true} />
-          </div>
-        ))}
-      </OwlCarousel>
-      ;
+      <BrowserView>
+        <div className="owl-theme" items={numberItems}>
+          {DataCard.map((card, idx) => (
+            <div className="item" key={idx}>
+              <Card card={card} isCardChildren={true} />
+            </div>
+          ))}
+        </div>
+      </BrowserView>
+      <MobileView>
+        <div className="owl-theme mobilefit">
+          {DataCard.map((card, idx) => (
+            <div className="item" key={idx}>
+              <Card card={card} isCardChildren={true} />
+            </div>
+          ))}
+        </div>
+      </MobileView>
     </div>
   );
 }

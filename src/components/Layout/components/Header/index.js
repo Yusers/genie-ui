@@ -5,24 +5,39 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import './Responsive.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faUser } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import OffCanvas from '../OffCanvas';
 
 const cx = classNames.bind(styles);
 
 function Header() {
   const [showItemsDrop, setShowItemsDrop] = useState(false);
+  const dropdownRef = useRef(null);
 
   const handleShow = () => {
     setShowItemsDrop(!showItemsDrop);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowItemsDrop(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className={`blog-header ${cx('header-text')} ${cx('header-bg')}`}>
       <div className={`nav`}>
         <div className={`${cx('navbar-body')}`}>
           <MobileView>
-            <div className={cx('dropdowMenu')}>
+            <div className={cx('dropdowMenu')} ref={dropdownRef}>
               <FontAwesomeIcon
                 className={cx('bars')}
                 icon={faBars}
@@ -32,13 +47,9 @@ function Header() {
                 <div>
                   <ul className={`nav justify-content-center ${cx('pc-nav')}`}>
                     <li className={`nav-item`}>
-                      <Link
-                        className={`nav-link active`}
-                        aria-current="page"
-                        to="/genie-ui"
-                      >
+                      <a className={`nav-link active`} href="/genie-ui">
                         Home
-                      </Link>
+                      </a>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="/genie-ui/community">
@@ -80,14 +91,13 @@ function Header() {
             </a> */}
             <ul className={`nav`}>
               <li className={`nav-item`}>
-                <Link
+                <a
                   className={`nav-link active ${cx('nav-brand')}`}
-                  aria-current="page"
-                  to="/genie-ui"
+                  href="/genie-ui"
                   style={{ fontSize: '32px' }}
                 >
                   GENIE
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -95,13 +105,9 @@ function Header() {
             <BrowserView>
               <ul className={`nav justify-content-center ${cx('pc-nav')}`}>
                 <li className={`nav-item`}>
-                  <Link
-                    className={`nav-link active`}
-                    aria-current="page"
-                    to="/genie-ui"
-                  >
+                  <a className={`nav-link active`} href="/genie-ui">
                     Home
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/genie-ui/community">

@@ -11,8 +11,139 @@
     z-index: 999;
   }
 
+  .chatbox {
+    width: 330px !important;
+  }
+
   .weekly {
     display: none !important;
+  }
+
+  .col {
+    padding: 0 9px !important;
+  }
+
+  .carousel {
+    height: 84vh !important;
+  }
+
+  .home-page {
+    margin-top: 5.75vh;
+  }
+
+  .Register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    margin-top: 5vh;
+  }
+
+  .blog-header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+  }
+
+  .Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  .card-img {
+    height: 42vh !important;
+  }
+
+  .form {
+    width: 342px;
+    height: 50vh;
+  }
+
+  .form-img {
+    border-top-left-radius: 4px;
+    border-end-start-radius: 4px;
+    text-align: center;
+    display: block;
+    padding: 0;
+    width: 30%;
+    padding: 2px;
+  }
+
+  .chatbox-btn {
+    font-size: 14px;
+    border-radius: 100% !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    right: 6px !important;
+    bottom: 6px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .form-login {
+    border-top-right-radius: 4px;
+    border-end-end-radius: 4px;
+    width: 70%;
+  }
+
+  .form-login .form-body,
+  .form-footer {
+    padding: 12px;
+  }
+
+  .Footer {
+    margin-top: -5vh !important;
+  }
+
+  .form-img h1 {
+    margin-top: 80px;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .form-img h5 {
+    font-size: 13px;
+  }
+
+  .weekly-page {
+    margin-top: 5.75vh;
+  }
+
+  .weekly-wrapper {
+    padding: 14px !important;
+  }
+
+  .weekly-container .mb-3 {
+    font-size: 14px;
+  }
+
+  .weekly-header {
+    margin-bottom: -2px !important;
+  }
+
+  .weekly-header h2 {
+    font-size: 20px;
+  }
+
+  .weekly-header p {
+    font-size: 12px;
+  }
+
+  .weekly-input {
+    height: 82vh !important;
+  }
+
+  .d-block {
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .weekly-header h1 {
+    color: white;
+    margin-bottom: 8px !important;
+    font-size: 22px;
   }
 
   .dropdowMenu {

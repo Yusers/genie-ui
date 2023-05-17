@@ -20,7 +20,7 @@ function OffCanvas({ card, isCardChildren, btn, ...props }) {
       <span onClick={handleShow}>{btn}</span>
       <Offcanvas show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title className="title">
+          <Offcanvas.Title className="Offcanvas-title">
             {isCardChildren && card.title}
           </Offcanvas.Title>
         </Offcanvas.Header>

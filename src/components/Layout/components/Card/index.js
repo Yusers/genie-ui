@@ -7,7 +7,11 @@ const cx = classNames.bind(styles);
 function Card({ card }) {
   return (
     <div className={`${cx('card')}`}>
-      <img className={`${cx('card-img')}`} alt={card.title} src={card.imgSrc} />
+      <img
+        className={`${cx('card-img')} card-img`}
+        alt={card.title}
+        src={card.imgSrc}
+      />
       <div className={`${cx('card-body')}`}>
         <h5 className={`${cx('card-title')}`}>{card.title}</h5>
         <p className={`${cx('card-descr')}`}>{card.description}</p>

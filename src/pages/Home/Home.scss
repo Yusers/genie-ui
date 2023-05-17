@@ -1,8 +1,11 @@
 $primary-color: #8b5050 !important;
 
+.home-page {
+  margin-top: 2.5%;
+}
+
 .home-img {
   height: 84vh;
-  margin-bottom: 24px;
   .intro-page {
     display: flex;
     align-items: center;
@@ -34,9 +37,6 @@ $primary-color: #8b5050 !important;
   }
 }
 
-.home-page {
-  margin-bottom: 16px;
-}
 .card-carousel {
   height: 544px;
 }
@@ -48,5 +48,9 @@ $primary-color: #8b5050 !important;
 }
 
 .landing-img {
-  height: 20vh;
+  height: 85vh;
+}
+
+.carousel-indicators {
+  height: 2vh !important;
 }

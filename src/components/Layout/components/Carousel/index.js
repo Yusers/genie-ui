@@ -9,10 +9,14 @@ function Carousel({ data }) {
           return (
             <CarouselB.Item key={index}>
               <img
-                className="d-block w-100"
+                className="d-block"
                 src={item.srcImg}
                 alt={item.title}
-                style={{ height: `96vh` }}
+                style={{
+                  height: `85vh`,
+                  objectFit: 'fill',
+                  width: '100%',
+                }}
               />
               <CarouselB.Caption className="caption">
                 <h3>{item.title}</h3>

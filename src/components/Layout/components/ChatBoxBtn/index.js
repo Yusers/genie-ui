@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ChatBox from '../ChatBox';
 import { faRobot } from '@fortawesome/free-solid-svg-icons';
+import '../Header/Responsive.scss';
 
 function ChatBoxBtn() {
   const [showComponent, setShowComponent] = useState(false);
