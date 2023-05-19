@@ -6,7 +6,7 @@ import { BrowserView, MobileView } from 'react-device-detect';
 const DataCard = [
   {
     id: 1,
-    imgSrc: '/images/outfit/home_outfit.jfif',
+    imgSrc: '../images/outfit/home_outfit.jfif',
     title: 'Monday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -18,7 +18,7 @@ const DataCard = [
   },
   {
     id: 2,
-    imgSrc: '/images/outfit/home_outfit2.jfif',
+    imgSrc: '../images/outfit/home_outfit2.jfif',
     title: 'Tuesday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -30,7 +30,7 @@ const DataCard = [
   },
   {
     id: 3,
-    imgSrc: '/images/outfit/home_outfit3.jfif',
+    imgSrc: '../images/outfit/home_outfit3.jfif',
     title: 'Wednesday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -42,7 +42,7 @@ const DataCard = [
   },
   {
     id: 4,
-    imgSrc: '/images/outfit/home_outfit4.jfif',
+    imgSrc: '../images/outfit/home_outfit4.jfif',
     title: 'Thursday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -54,7 +54,7 @@ const DataCard = [
   },
   {
     id: 5,
-    imgSrc: '/images/outfit/home_outfit5.jfif',
+    imgSrc: '.././images/outfit/home_outfit5.jfif',
     title: 'Friday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -66,7 +66,7 @@ const DataCard = [
   },
   {
     id: 6,
-    imgSrc: '/images/outfit/home_outfit6.jfif',
+    imgSrc: '../images/outfit/home_outfit6.jfif',
     title: 'Saturday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -78,7 +78,7 @@ const DataCard = [
   },
   {
     id: 7,
-    imgSrc: '/images/outfit/home_outfit7.jfif',
+    imgSrc: '../images/outfit/home_outfit7.jfif',
     title: 'Sunday',
     description:
       "Today's outfit is all about comfort and style. The loose-fitting shirt paired with the high-waisted Continue...",
@@ -94,7 +94,7 @@ function Outfited({ numberItems = 4 }) {
   return (
     <div className="Outfited">
       <BrowserView>
-        <div className="owl-theme" items={numberItems}>
+        <div className="pc-fit owl-theme" items={numberItems}>
           {DataCard.map((card, idx) => (
             <div className="item" key={idx}>
               <Card card={card} isCardChildren={true} />
@@ -103,7 +103,7 @@ function Outfited({ numberItems = 4 }) {
         </div>
       </BrowserView>
       <MobileView>
-        <div className="owl-theme mobilefit">
+        <div className="mobilefit owl-theme ">
           {DataCard.map((card, idx) => (
             <div className="item" key={idx}>
               <Card card={card} isCardChildren={true} />

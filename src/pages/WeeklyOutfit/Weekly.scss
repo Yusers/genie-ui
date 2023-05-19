@@ -9,7 +9,6 @@ $second-color: #473a3a !important;
   justify-content: center;
   flex-direction: column;
   text-shadow: 2px 2px 4px #1a1717;
-  margin-bottom: -11vh;
 
   .weekly-input {
     width: 100%;
@@ -27,26 +26,35 @@ $second-color: #473a3a !important;
   }
 
   .weekly-header {
-    margin-bottom: 14px;
+    margin-bottom: 2px;
     display: flex;
     align-items: center;
     flex-direction: column;
 
     .weekly-title {
       color: white;
-      margin-bottom: 24px;
+      margin-bottom: 4px;
+      font-size: 22px;
     }
   }
 
+  .weekly-header p {
+    margin-bottom: 4px !important;
+  }
+
+  .weekly-des h2 {
+    font-size: 22px;
+  }
   .weekly-wrapper {
     background-color: $second-color;
-    padding: 20px;
+    padding: 12px;
     border-radius: 12px;
   }
 
   .mb-3 {
-    font-size: 22px;
+    font-size: 16px;
     font-family: 'Oswald', sans-serif;
+    margin-bottom: 4px !important;
   }
 
   .card-carousel {

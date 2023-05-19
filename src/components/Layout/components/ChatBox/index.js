@@ -5,11 +5,12 @@ import '../Header/Responsive.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmarkCircle } from '@fortawesome/free-solid-svg-icons';
+const severAddress = 'https://yusers.github.io/genie-ui/chat';
 
 function ChatBox(props) {
   const [conversation, setConversation] = useState([]);
   const [message, setMessage] = useState('');
-  const [users, setUsers] = useState('Guess');
+  // const [users, setUsers] = useState('Guess');
   const inputRef = useRef(null);
   const [isOpen, setIsOpen] = useState(true);
 
@@ -18,9 +19,9 @@ function ChatBox(props) {
     setIsOpen(!isOpen);
   };
 
-  const handleUsers = (user) => {
-    setUsers(user);
-  };
+  // const handleUsers = (user) => {
+  //   setUsers(user);
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,24 +30,17 @@ function ChatBox(props) {
     setConversation((prevConversation) => [
       ...prevConversation,
       {
-        user: `${users}`,
+        user: `${'Guess'}`,
         text: message,
       },
     ]);
 
     axios
-      .post('http://localhost:8080/chat', { prompt: message })
+      .post('http://13.213.51.193/chat', { prompt: message })
       .then((res) => {
         let botMessage = res.data.trim();
         if (message.trim().toLowerCase() === 'hello') {
-          botMessage = `Hello ${users}, How can I help you?`;
-        } else if (
-          message.toLowerCase().includes('tên') ||
-          message.toLowerCase().includes('tôi là')
-        ) {
-          handleUsers();
-        } else if (message.toLowerCase().includes('what your name')) {
-          botMessage = `I'm chatGPT`;
+          botMessage = `Hello ${'Guess'}, How can I help you?`;
         } else if (message.toLowerCase().includes('website')) {
           botMessage = `Website Genie giúp các bạn mở rộng gu ăn mặc, thời trang nói chung.`;
         }
@@ -91,7 +85,7 @@ function ChatBox(props) {
                     msg.user === 'Bot' ? msg.user : 'Human'
                   }`}
                 >
-                  <span className="chatbox__user">{msg.user}:</span> {msg.text}
+                  <span className="chatbox__user">{'Guess'}:</span> {msg.text}
                 </p>
               ))}
             </div>

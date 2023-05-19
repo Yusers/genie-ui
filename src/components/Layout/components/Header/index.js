@@ -36,7 +36,7 @@ function Header() {
     <header className={`blog-header ${cx('header-text')} ${cx('header-bg')}`}>
       <div className={`nav`}>
         <div className={`${cx('navbar-body')}`}>
-          <MobileView>
+          <div className="MobileView">
             <div className={cx('dropdowMenu')} ref={dropdownRef}>
               <FontAwesomeIcon
                 className={cx('bars')}
@@ -70,7 +70,7 @@ function Header() {
                 </div>
               )}
             </div>
-          </MobileView>
+          </div>
           <ul className={`${cx('features')} weekly nav justify-content-center`}>
             <li className={`nav-item`}>
               <Link
@@ -102,7 +102,7 @@ function Header() {
             </ul>
           </div>
           <div className="navbar-right">
-            <BrowserView>
+            <div className="browser-view">
               <ul className={`nav justify-content-center ${cx('pc-nav')}`}>
                 <li className={`nav-item`}>
                   <a className={`nav-link active`} href="/genie-ui">
@@ -127,14 +127,14 @@ function Header() {
                   </Link>
                 </li>
               </ul>
-            </BrowserView>
-            <MobileView>
+            </div>
+            <div className="MobileView">
               <Link className={`nav-link`} to="/genie-ui/login">
                 <div className={`login`}>
                   <FontAwesomeIcon icon={faUser} />
                 </div>
               </Link>
-            </MobileView>
+            </div>
           </div>
         </div>
       </div>

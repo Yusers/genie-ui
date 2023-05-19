@@ -1,5 +1,6 @@
 import { Carousel as CarouselB } from 'react-bootstrap';
 import './Carousel.scss';
+import '../Header/Responsive.scss';
 
 function Carousel({ data }) {
   return (
@@ -12,11 +13,7 @@ function Carousel({ data }) {
                 className="d-block"
                 src={item.srcImg}
                 alt={item.title}
-                style={{
-                  height: `85vh`,
-                  objectFit: 'fill',
-                  width: '100%',
-                }}
+                style={{ height: '100vh', width: '100%' }}
               />
               <CarouselB.Caption className="caption">
                 <h3>{item.title}</h3>

@@ -11,6 +11,10 @@
     z-index: 999;
   }
 
+  .carousel-indicators {
+    display: none !important;
+  }
+
   .chatbox {
     width: 330px !important;
   }
@@ -20,14 +24,65 @@
   }
 
   .col {
-    padding: 0 9px !important;
+    font-size: 14px;
+    padding: 0 8px !important;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  .landing-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .carousel {
-    height: 84vh !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .home-img {
+  }
+
+  .carousel-item {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-item img {
+    margin-top: 9%;
+    height: 88vh;
   }
 
   .home-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     margin-top: 5.75vh;
   }
 
@@ -65,11 +120,10 @@
   .form-img {
     border-top-left-radius: 4px;
     border-end-start-radius: 4px;
-    text-align: center;
-    display: block;
-    padding: 0;
-    width: 30%;
-    padding: 2px;
+    text-align: center !important;
+    display: block !important;
+    padding: 0 !important;
+    width: 30% !important;
   }
 
   .chatbox-btn {
@@ -85,7 +139,7 @@
   .form-login {
     border-top-right-radius: 4px;
     border-end-end-radius: 4px;
-    width: 70%;
+    width: 70% !important;
   }
 
   .form-login .form-body,
@@ -100,7 +154,7 @@
   .form-img h1 {
     margin-top: 80px;
     font-size: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
   }
 
   .form-img h5 {
@@ -108,7 +162,12 @@
   }
 
   .weekly-page {
-    margin-top: 5.75vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .weekly-wrapper {
@@ -116,7 +175,8 @@
   }
 
   .weekly-container .mb-3 {
-    font-size: 14px;
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
   }
 
   .weekly-header {
@@ -128,11 +188,11 @@
   }
 
   .weekly-header p {
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 6px;
   }
 
   .weekly-input {
-    height: 82vh !important;
   }
 
   .d-block {
@@ -143,7 +203,11 @@
   .weekly-header h1 {
     color: white;
     margin-bottom: 8px !important;
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .browser-view {
+    display: none !important;
   }
 
   .dropdowMenu {
@@ -165,10 +229,20 @@
     color: white;
     font-size: 20px;
   }
+
+  .MobileView {
+    display: block !important;
+  }
 }
 
 // PC responsive and tablet
 @media (min-width: 740px) {
+  .browser-view {
+    display: block !important;
+  }
+  .MobileView {
+    display: none !important;
+  }
   .dropdowMenu {
     display: none !important;
   }
@@ -176,4 +250,23 @@
   .navbar-brand-img {
     margin-left: 176px;
   }
+}
+
+@media (min-width: 800px) and (max-width: 1420px) {
+  .carousel-indicators {
+    margin-bottom: calc(100% + 7%) !important;
+  }
+
+  .MobileView {
+    display: none !important;
+  }
+
+  .carousel-caption {
+    margin-bottom: 6% !important;
+
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 1180px) {
 }

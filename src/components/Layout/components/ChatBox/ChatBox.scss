@@ -16,18 +16,19 @@ $chatbox-bg-color: #e0cdcd;
 
 .chatbox-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
+  bottom: 4px;
+  right: 10px;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   border-radius: 50%;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
   cursor: pointer;
 }
 .chatbox-btn:hover {
