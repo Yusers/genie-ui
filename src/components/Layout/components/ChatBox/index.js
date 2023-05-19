@@ -36,7 +36,7 @@ function ChatBox(props) {
     ]);
 
     axios
-      .post('http://13.213.51.193/chat', { prompt: message })
+      .post('https://13.213.51.193/chat', { prompt: message })
       .then((res) => {
         let botMessage = res.data.trim();
         if (message.trim().toLowerCase() === 'hello') {
