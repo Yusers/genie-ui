@@ -36,10 +36,7 @@ function ChatBox(props) {
     ]);
 
     axios
-      .post(
-        'https://ec2-13-213-51-193.ap-southeast-1.compute.amazonaws.com/chat',
-        { prompt: message }
-      )
+      .post('http://localhost:443/chat', { prompt: message })
       .then((res) => {
         let botMessage = res.data.trim();
         if (message.trim().toLowerCase() === 'hello') {
